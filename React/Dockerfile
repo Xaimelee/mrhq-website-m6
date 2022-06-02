@@ -1,6 +1,6 @@
 #Each instruction in this file creates a new layer
 #Here we are getting our node as Base image
-FROM node:latest
+FROM node:18-alpine3.14
 #setting working directory in the container
 WORKDIR /app/React
 # add `/app/node_modules/.bin` to $PATH
