@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import GetCollection from './Frontend/GetCollection';
 
 function App() {
