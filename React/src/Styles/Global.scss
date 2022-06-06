@@ -4,3 +4,27 @@ $grey-dark: #323031;
 $grey-light: #F3F4F8;
 $cyan: #177E89;
 $yellow: #FFC857;
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontalList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.horizontalListEntry {
+    display: block;
+    float: right;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

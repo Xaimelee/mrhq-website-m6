@@ -1,0 +1,21 @@
+.InformationHeader {
+    @extend .header;
+
+    background-color: global.$grey;
+    min-height: 50px;
+};
+
+.InformationHeaderList {
+    @extend .horizontalList;
+    padding-left: 5%;
+    padding-right: 5%;
+};
+
+.InformationHeaderListEntry {
+    @extend .horizontalListEntry;
+
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+};
