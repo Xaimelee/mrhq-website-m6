@@ -1,0 +1,51 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.listEntry {
+    margin-left: 15px;
+    margin-right: 15px
+}
+
+.NavigationHeader {
+    @extend .header;
+    min-height: 250px;
+}
+
+.NavigationHeaderList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.NavigationHeaderListEntry {
+    @extend .horizontalListEntry;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.NavigationHeaderProductList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.NavigationHeaderProductListEntry {
+    @extend .horizontalListEntry;
+    @extend .listEntry;
+}
+
+.NavigationHeaderAccountList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.NavigationHeaderAccountListEntry {
+    @extend .horizontalListEntry;
+    @extend .listEntry;
+}

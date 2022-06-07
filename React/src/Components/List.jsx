@@ -1,13 +1,13 @@
-function List({className, entries}){
-    let listEntries = []
+function List({className, listEntries}){
+    let entries = []
 
-    for (let i = 0; i < entries.length; i++) {
-        listEntries.push(entries[i])
+    for (let i = 0; i < listEntries.length; i++) {
+        entries.push(listEntries[i])
     }
 
     return (
         <ul className = {className}>
-            {listEntries}
+            {entries}
         </ul>
     )
 }

@@ -1,19 +1,20 @@
 import PetLogo from "../Images/1-nav-bar/logo.png"
 import HeaderList from "../Components/HeaderList"
+import ListImageEntry from "../Components/ListImageEntry"
 import NavigationProductList from "./NavigationProductList"
 import NavigationAccountList from "./NavigationAccountList"
 
 function NavigationHeader() {
-    let entries = [
+    let listEntries = [
         <>
-        <li><img className = "NavigationHeaderLogo" src = {PetLogo} alt = "" /></li>
-        <NavigationProductList />
-        <NavigationAccountList />
+        <ListImageEntry entryClassName = "NavigationHeaderListEntry" imageClassName = "NavigationHeaderListLogo" image = {PetLogo}/>
+        <NavigationProductList entryClassName = "NavigationHeaderListEntry" />
+        <NavigationAccountList entryClassName = "NavigationHeaderListEntry" />
         </>
     ]
 
     return (
-        <HeaderList headerClassName = "NavigationHeader" listClassName = "NavigationHeaderList" listEntries = {entries}/>
+        <HeaderList headerClassName = "NavigationHeader" listClassName = "NavigationHeaderList" listEntries = {listEntries}/>
     )
 }
 
