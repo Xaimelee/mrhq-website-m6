@@ -1,17 +1,3 @@
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.listEntry {
-    margin-left: 15px;
-    margin-right: 15px
-}
-
 .NavigationHeader {
     @extend .header;
     min-height: 250px;

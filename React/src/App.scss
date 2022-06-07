@@ -1,6 +1,8 @@
 @use "Styles/Global" as global;
+@import "Styles/Global.scss";
 @import "Styles/InformationHeader.scss";
 @import "Styles/NavigationHeader.scss";
 @import "Styles/SlideShow.scss";
+@import "Styles/InformationBanner.scss";
 @import "react-slideshow-image/dist/styles.css";
 //@import "path";

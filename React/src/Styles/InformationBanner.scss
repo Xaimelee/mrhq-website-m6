@@ -1,0 +1,51 @@
+.text {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+.InformationBannerHeader {
+    @extend .header;
+    min-height: 200px;
+    background-color: global.$grey-dark;
+}
+
+.InformationBannerHeaderList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.InformationBannerEntryText {
+    @extend .text;
+    font-size: 20px;
+}
+
+.InformationBannerEntryTextSecondary {
+    @extend .text;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.InformationBannerEntryTextHeader {
+    @extend .text;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.InformationBannerEntry {
+    @extend .horizontalList;
+    @extend .list;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.InformationBannerImage {
+    min-width: 100px;
+    object-fit: none;
+}
+
+.InformationBannerEntryTextList {
+    @extend .horizontalList;
+}
