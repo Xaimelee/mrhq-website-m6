@@ -1,17 +1,18 @@
-import HeaderList from "../Components/HeaderList"
-import ListTextEntry from "../Components/ListTextEntry"
+import NavHeaderList from "../Components/NavHeaderList"
+import NavListEntry from "../Components/NavListEntry"
 
 function InformationHeader() {
     const entriesClassName = "InformationHeaderListEntry"
+    const linksClassName = "InformationHeaderListEntryLink"
 
     let entries = [
-        <ListTextEntry className = {entriesClassName} text = "24/7 Help"/>,
-        <ListTextEntry className = {entriesClassName} text = "Articles"/>,
-        <ListTextEntry className = {entriesClassName} text = "Store Finder"/>
+        <NavListEntry entryClassName = {entriesClassName} linkClassName = {linksClassName} link = "/" text = "24/7 Help"/>,
+        <NavListEntry entryClassName = {entriesClassName} linkClassName = {linksClassName} link = "/" text = "Articles"/>,
+        <NavListEntry entryClassName = {entriesClassName} linkClassName = {linksClassName} link = "/" text = "Store Finder"/>
     ]
 
     return (
-        <HeaderList headerClassName = "InformationHeader" listClassName = "InformationHeaderList" listEntries = {entries} />
+        <NavHeaderList headerClassName = "InformationHeader" listClassName = "InformationHeaderList" listEntries = {entries} />
     )
 }
 

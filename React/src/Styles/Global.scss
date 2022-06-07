@@ -22,9 +22,4 @@ $yellow: #FFC857;
 .horizontalListEntry {
     display: block;
     float: right;
-
-    &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-    }
 }

@@ -1,6 +1,6 @@
 import List from "./List"
 
-function HeaderList({headerClassName, listClassName, listEntries}) {
+function NavHeaderList({headerClassName, listClassName, listEntries}) {
     return (
         <nav className = {headerClassName}>
             <List className = {listClassName} entries = {listEntries}/>
@@ -8,4 +8,4 @@ function HeaderList({headerClassName, listClassName, listEntries}) {
     )
 }
 
-export default HeaderList
+export default NavHeaderList

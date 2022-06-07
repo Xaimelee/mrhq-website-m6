@@ -1,14 +1,20 @@
 import './App.scss';
 import React from 'react';
-import InformationHeader from './Elements/InformationHeader';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './Pages/Layout';
+import Homepage from './Pages/Homepage';
 // import DisplayCollection from './Frontend/DisplayCollection';
 // <DisplayCollection url = "getDogFood"/>
 
 function App() {
   return (
-    <div className="App">
-      <InformationHeader />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path = "/" element = {<Layout />}>
+          <Route index element = {<Homepage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
