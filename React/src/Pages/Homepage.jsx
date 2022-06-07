@@ -1,12 +1,14 @@
 import SlideShow from "../Elements/SlideShow"
 import InformationBanner from "../Elements/InformationBanner"
+import TopBrandsHeader from "../Elements/TopBrandsHeader"
 
 function Homepage() {
     return (
         <>
         <SlideShow />
         <InformationBanner />
-        <div>test</div>
+        <TopBrandsHeader />
+        <div>t</div>
         </>
     )
 }

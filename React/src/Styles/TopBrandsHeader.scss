@@ -1,0 +1,37 @@
+.TopBrandsHeader {
+    @extend .header;
+}
+
+.TopBrandsHeaderList {
+    @extend .list;
+    justify-content: flex-end;
+    min-height: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.TopBrandsHeaderText {
+    @extend .list;
+    @extend .text;
+    color: global.$grey-dark;
+    font-size: 42px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.TopBrandsHeaderDropdownButton {
+    margin: auto;
+}
+
+.space {
+    margin: auto;
+    width: 180px;
+}
+
+@media (max-width: 522px) {
+    .space {
+        margin: none;
+        width: 0px;
+    }
+}
