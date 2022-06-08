@@ -11,7 +11,7 @@
 
 .DropdownListMain {
     list-style: none;
-    overflow: scroll;
+    overflow-y: auto;
     min-height: 33px;
     max-height: 300px;
     padding: 0;
