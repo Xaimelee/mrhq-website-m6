@@ -4,18 +4,25 @@ import ListDropdownButtonEntry from "../Components/ListDropdownButtonEntry"
 import DropdownListTextEntry from "../Components/DropdownListTextEntry"
 
 function TopBrandsHeader() {
-    let dropdownEntries = [
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Acana"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Addiction"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Animals Like Us"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Black Hawk"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Eukanuba"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Glow"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Go! Solutions"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Hill's Prescription Diet"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Hill's Science Diet"/>,
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Iams"/>
+    let brands = [
+        "Acana",
+        "Addiction",
+        "Animals Like Us",
+        "Black Hawk",
+        "Eukanuba",
+        "Glow",
+        "Go! Solutions",
+        "Hill's Prescription Diet",
+        "Hill's Science Diet",
+        "Iams"
     ]
+
+    let dropdownEntries = []
+
+    for (let i = 0; i < brands.length; i++) {
+        let entry = <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = {brands[i]}/>
+        dropdownEntries.push(entry)
+    }
 
     let listEntries = [
         <li className = "space"></li>,
