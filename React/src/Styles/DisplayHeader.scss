@@ -14,6 +14,7 @@
 .displayElementHeaderText {
     @extend .list;
     @extend .text;
+    text-align: center;
     color: $grey-dark;
     font-size: 42px;
     font-weight: bolder;
