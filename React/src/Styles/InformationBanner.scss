@@ -29,10 +29,9 @@
 .InformationBannerEntry {
     @extend .horizontalList;
     @extend .list;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 3%;
-    margin-right: 3%;
 }
 
 .InformationBannerImage {
