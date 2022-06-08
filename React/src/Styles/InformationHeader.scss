@@ -21,10 +21,11 @@
 };
 
 .InformationHeaderListEntryLink {
-    color: black;
+    color: global.$grey-dark;
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
+        color: global.$cyan;
     }
 };

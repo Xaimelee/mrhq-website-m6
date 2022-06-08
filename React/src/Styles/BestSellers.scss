@@ -1,0 +1,24 @@
+.BestSellers {
+    @extend .header;
+    background-color: global.$grey;
+}
+
+.BestSellersList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.BestSellersListEntry {
+    margin: auto;
+    padding: 0;
+}
+
+@media (max-width: 706px) {
+    .space {
+        display: none
+    }
+    .BestSellersListEntryImage {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

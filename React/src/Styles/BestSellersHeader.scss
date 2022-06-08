@@ -1,0 +1,19 @@
+.BestSellersHeader {
+    @extend .header;
+    background-color: global.$grey;
+}
+
+.BestSellersHeaderList{
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.BestSellersHeaderText {
+    @extend .list;
+    @extend .text;
+    color: $grey-dark;
+    font-size: 42px;
+    font-weight: bolder;
+    margin: auto;
+    text-align: center;
+}
