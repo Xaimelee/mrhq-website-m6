@@ -2,9 +2,19 @@
     @extend .text;
     font-weight: bold;
     font-size: 24px;
-    width: 160px;
-    height: 50px;
+    min-width: 160px;
+    min-height: 50px;
     border-radius: 12px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.buttonDropdown {
+    padding: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    min-width: 240px;
+    min-height: 40px;
+    border-radius: 8px;
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.25);
 }
 

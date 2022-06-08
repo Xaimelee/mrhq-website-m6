@@ -28,17 +28,10 @@
 }
 
 .DropdownButtonMain {
-    padding: 0;
-    border-radius: 8px;
-    min-height: 40px;
-    width: 240px;
-    cursor: pointer;
-    font-size: 20px;
+    @extend .buttonDropdown;
+
     color: global.$grey-dark;
-    text-align: center;
-    font-weight: bolder;
     background-color: white;
-    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.33);
 }
 
 .DropdownButtonIcon {
