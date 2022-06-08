@@ -20,7 +20,7 @@ function TopBrands() {
     let listEntries = []
 
     for (let i = 0; i < topBrandsImages.length; i++) {
-        let topBrand = <ListImageEntry entryClassName = "TopBrandsListEntry" topBrandsEntryClassName = "TopBrandsListEntryImage" image = {topBrandsImages[i]}/>
+        let topBrand = <ListImageEntry entryClassName = "TopBrandsListEntry" imageClassName = "TopBrandsListEntryImage" image = {topBrandsImages[i]}/>
         let listEntry = <List className = "TopBrandsEntry" listEntries = {[topBrand, button]}/>
         listEntries.push(listEntry)
     }

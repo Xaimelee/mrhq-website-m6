@@ -1,0 +1,27 @@
+.button {
+    @extend .text;
+    font-weight: bold;
+    font-size: 24px;
+    width: 160px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.cyanButton {
+    @extend .button;
+    background-color: global.$cyan;
+
+    &:hover {
+        background-color: global.$red;
+    }
+}
+
+.redButton {
+    @extend .button;
+    background-color: global.$red;
+
+    &:hover {
+        background-color: global.$cyan;
+    }
+}
