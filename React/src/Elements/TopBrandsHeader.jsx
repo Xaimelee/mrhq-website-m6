@@ -5,7 +5,16 @@ import DropdownListTextEntry from "../Components/DropdownListTextEntry"
 
 function TopBrandsHeader() {
     let dropdownEntries = [
-        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Hello There"/>
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Acana"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Addiction"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Animals Like Us"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Black Hawk"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Eukanuba"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Glow"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Go! Solutions"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Hill's Prescription Diet"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Hill's Science Diet"/>,
+        <DropdownListTextEntry entryClassName = "DropdownListTextEntryMain" text = "Iams"/>
     ]
 
     let listEntries = [
