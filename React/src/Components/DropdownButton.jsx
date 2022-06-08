@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ButtonDropdownDownIcon from "../Images/button-dropdown-down.png"
+import ButtonDropdownUpIcon from "../Images/button-dropdown-up.png"
 
 function DropdownButton({containerClassName, buttonClassName, title, dropdownClassName, listClassName, listEntries}) {
     const [open, setOpen] = useState(false)
@@ -10,7 +12,11 @@ function DropdownButton({containerClassName, buttonClassName, title, dropdownCla
     return (
         <div className = {containerClassName}>
             <button type = "button" className = {buttonClassName} onClick={() => handleOnClick()}>
-                {title}           
+                {title}
+                {open 
+                    ? <img className = "DropdownButtonIcon" src = {ButtonDropdownUpIcon} alt = "" />
+                    : <img className = "DropdownButtonIcon" src = {ButtonDropdownDownIcon} alt = "" />
+                }
             </button>
             {open &&
                 <div className = {dropdownClassName}>

@@ -8,7 +8,6 @@ function Homepage() {
             <SlideShow />
             <InformationBanner />
             <TopBrandsHeader />
-            <div>t</div>
         </>
     )
 }
