@@ -6,33 +6,39 @@ import AutoShipImage from "../Images/3-dark-grey-info-banner/auto-ship.png"
 import QuestionImage from "../Images/3-dark-grey-info-banner/question.png"
 
 function InformationBanner() {
-    const textHeaderClassName = "InformationBannerEntryTextHeader"
-    const textSecondaryClassName = "InformationBannerEntryTextSecondary"
-    const textClassName = "InformationBannerEntryText"
-
-    let bannerOneText = [
-        <ListTextEntry className = {textHeaderClassName} text = "Free Shipping"/>,
-        <ListTextEntry className = {textSecondaryClassName} text = "Nationwide Over $39"/>,
-        <ListTextEntry className = {textClassName} text = "Delivery delays message"/>
+    let bannersClasses = [
+        "InformationBannerEntryTextHeader",
+        "InformationBannerEntryTextSecondary",
+        "InformationBannerEntryText"
     ]
 
-    let bannerTwoText = [
-        <ListTextEntry className = {textHeaderClassName} text = "Auto Ship"/>,
-        <ListTextEntry className = {textSecondaryClassName} text = "Get up to 20% off your delivery every month"/>,
-        <ListTextEntry className = {textClassName} text = "Get your pet's favourite products easier"/>
+    let banners = [
+        {
+            text: ["Free Shipping", "Nationwide Over $39", "Delivery delays message"],
+            image: LocalShippingImage
+        },
+        {
+            text: ["Auto Ship", "Get up to 20% off your delivery every month", "Get your pet's favourite products easier"],
+            image: AutoShipImage
+        },
+        {
+            text: ["Got a question?", "Contact us", "We are here for you"],
+            image: QuestionImage
+        }
     ]
 
-    let bannerThreeText = [
-        <ListTextEntry className = {textHeaderClassName} text = "Got a question?"/>,
-        <ListTextEntry className = {textSecondaryClassName} text = "Contact us"/>,
-        <ListTextEntry className = {textClassName} text = "We are here for you"/>
-    ]
+    let listEntries = []
 
-    let listEntries = [
-        <InformationBannerEntry image = {LocalShippingImage} listEntries = {bannerOneText}/>,
-        <InformationBannerEntry image = {AutoShipImage} listEntries = {bannerTwoText}/>,
-        <InformationBannerEntry image = {QuestionImage} listEntries = {bannerThreeText}/>
-    ]
+    for (let i = 0; i < banners.length; i++) {
+        let textEntries = []
+
+        for (let a = 0; a < bannersClasses.length; a++) {
+            textEntries.push(<ListTextEntry className = {bannersClasses[a]} text = {banners[i].text[a]}/>)
+        }
+
+        let entry = <InformationBannerEntry image = {banners[i].image} listEntries = {textEntries}/>
+        listEntries.push(entry)
+    }
 
     return (
         <HeaderList headerClassName = "InformationBannerHeader" listClassName = {"InformationBannerHeaderList"} listEntries = {listEntries}/>
