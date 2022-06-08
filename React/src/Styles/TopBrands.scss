@@ -1,0 +1,25 @@
+.TopBrands {
+    @extend .header;
+    min-height: 400px;
+}
+
+.TopBrandsList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.TopBrandsEntry {
+    margin: auto;
+    padding: 0;
+}
+
+.TopBrandsListEntry {
+    @extend .list;
+}
+
+.TopBrandsListEntryImage {
+}
+
+.TopBrandsButton {
+
+}

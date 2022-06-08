@@ -8,7 +8,7 @@ import BrandThreeImage from "../Images/4-top-brands/brand-3.png"
 import BrandFourImage from "../Images/4-top-brands/brand-4.png"
 
 function TopBrands() {
-    let button = <ListButtonEntry entryClassName = "TopBrandsListEntry" buttonClassName = "TopBrandsButton"text = "Shop now"/>
+    let button = <ListButtonEntry entryClassName = "TopBrandsListEntry" buttonClassName = "TopBrandsButton" text = "Shop now"/>
     
     let topBrandsImages = [
         BrandOneImage,

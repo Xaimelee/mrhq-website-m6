@@ -1,10 +1,12 @@
 .DropdownMain {
     position: absolute;
+    margin-top: 4px;
     top: 100%;
     width: 100%;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: white;
     border-radius: 8px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.33);
 }
 
 .DropdownListMain {
@@ -22,7 +24,7 @@
 
     &:hover {
         border-radius: 8px;
-        background-color: rgba(0, 0, 0, 0.14);
+        background-color: global.$grey-light;
         cursor: pointer;
     }
 }
