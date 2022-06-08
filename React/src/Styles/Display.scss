@@ -1,0 +1,22 @@
+.displayElement {
+    @extend .header;
+    min-height: 500px;
+}
+
+.displayElementList {
+    @extend .horizontalList;
+    @extend .list;
+}
+
+.displayElementEntry {
+    margin: auto;
+    padding: 0;
+}
+
+.displayElementListEntry {
+    @extend .list;
+}
+
+.displayElementListEntryImage {
+    border-radius: 12px;
+}

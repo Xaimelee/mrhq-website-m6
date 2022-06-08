@@ -1,6 +1,7 @@
 .BestSellersHeader {
     @extend .header;
     background-color: global.$grey;
+    min-height: 150px;
 }
 
 .BestSellersHeaderList{

@@ -1,7 +1,6 @@
-import HeaderList from "../Components/HeaderList"
-import ListTextEntry from "../Components/ListTextEntry"
 import ListDropdownButtonEntry from "../Components/ListDropdownButtonEntry"
 import DropdownListTextEntry from "../Components/DropdownListTextEntry"
+import DisplayHeaderEntry from "../Components/DisplayHeaderEntry"
 
 function TopBrandsHeader() {
     let brands = [
@@ -24,14 +23,10 @@ function TopBrandsHeader() {
         dropdownEntries.push(entry)
     }
 
-    let listEntries = [
-        <li className = "space"></li>,
-        <ListTextEntry className = "TopBrandsHeaderText" text = "Top Brands"/>,
-        <ListDropdownButtonEntry entryClassName = "TopBrandsHeaderDropdownButton" containerClassName = "DropdownButtonContainerMain" buttonClassName = "DropdownButtonMain" title = "Shop by brands" dropdownClassName = "DropdownMain" listClassName = "DropdownListMain" listEntries = {dropdownEntries}/>
-    ]
+    let dropdown = <ListDropdownButtonEntry entryClassName = "displayElementHeaderDropdownButton" containerClassName = "DropdownButtonContainerMain" buttonClassName = "DropdownButtonMain" title = "Shop by brands" dropdownClassName = "DropdownMain" listClassName = "DropdownListMain" listEntries = {dropdownEntries}/>
 
     return (
-        <HeaderList headerClassName = "TopBrandsHeader" listClassName = {"TopBrandsHeaderList"} listEntries = {listEntries}/>
+        <DisplayHeaderEntry headerClassName = "displayElementHeader" listClassName = "displayElementHeaderList" entryClassName = "DropdownListTextEntryMain" headerTextClassName = "displayElementHeaderText" emptySpaceClassName = "TopBrandsSpace" text = "Top Brands" entries = {brands} dropdown = {dropdown}/>
     )
 }
 

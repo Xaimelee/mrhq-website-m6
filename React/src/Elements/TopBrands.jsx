@@ -1,14 +1,12 @@
-import HeaderList from "../Components/HeaderList"
 import ListButtonEntry from "../Components/ListButtonEntry"
-import ListImageEntry from "../Components/ListImageEntry"
-import List from "../Components/List"
+import DisplayEntry from "../Components/DisplayEntry"
 import BrandOneImage from "../Images/4-top-brands/brand-1.png"
 import BrandTwoImage from "../Images/4-top-brands/brand-2.png"
 import BrandThreeImage from "../Images/4-top-brands/brand-3.png"
 import BrandFourImage from "../Images/4-top-brands/brand-4.png"
 
 function TopBrands() {
-    let button = <ListButtonEntry entryClassName = "TopBrandsListEntry" buttonClassName = "cyanButton" text = "Shop now"/>
+    let button = <ListButtonEntry entryClassName = "displayElementListEntry" buttonClassName = "cyanButton" text = "Shop now"/>
     
     let topBrandsImages = [
         BrandOneImage,
@@ -17,16 +15,8 @@ function TopBrands() {
         BrandFourImage
     ]
     
-    let listEntries = []
-
-    for (let i = 0; i < topBrandsImages.length; i++) {
-        let topBrand = <ListImageEntry entryClassName = "TopBrandsListEntry" imageClassName = "TopBrandsListEntryImage" image = {topBrandsImages[i]}/>
-        let listEntry = <List className = "TopBrandsEntry" listEntries = {[topBrand, button]}/>
-        listEntries.push(listEntry)
-    }
-    
     return (
-        <HeaderList headerClassName = "TopBrands" listClassName = "TopBrandsList" listEntries = {listEntries}/>
+        <DisplayEntry headerClassName = "displayElement" listClassName = "displayElementList" entryClassName = "displayElementListEntry" entryListClassName = "displayElementEntry" imageClassName = "displayElementListEntryImage" imageEntries = {topBrandsImages} button = {button}/>
     )
 }
 

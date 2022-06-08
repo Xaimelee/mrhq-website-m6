@@ -4,6 +4,8 @@ import TopBrandsHeader from "../Elements/TopBrandsHeader"
 import TopBrands from "../Elements/TopBrands"
 import BestSellersHeader from "../Elements/BestSellersHeader"
 import BestSellers from "../Elements/BestSellers"
+import CustomerFavouritesHeader from "../Elements/CustomerFavouritesHeader"
+import CustomerFavourites from "../Elements/CustomerFavourites"
 
 function Homepage() {
     return (
@@ -14,6 +16,8 @@ function Homepage() {
             <TopBrands />
             <BestSellersHeader />
             <BestSellers />
+            <CustomerFavouritesHeader />
+            <CustomerFavourites />
         </>
     )
 }
