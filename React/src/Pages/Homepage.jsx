@@ -5,10 +5,10 @@ import TopBrandsHeader from "../Elements/TopBrandsHeader"
 function Homepage() {
     return (
         <>
-        <SlideShow />
-        <InformationBanner />
-        <TopBrandsHeader />
-        <div>t</div>
+            <SlideShow />
+            <InformationBanner />
+            <TopBrandsHeader />
+            <div>t</div>
         </>
     )
 }

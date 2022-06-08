@@ -1,16 +1,25 @@
-import Dropdown from 'rsuite/Dropdown';
+import { useState } from "react";
 
-function DropdownButton({title}) {
-    return(
-        <Dropdown title = {title}>
-            <Dropdown.Item>New File</Dropdown.Item>
-            <Dropdown.Item>New File with Current Profile</Dropdown.Item>    
-            <Dropdown.Item>Download As...</Dropdown.Item>
-            <Dropdown.Item>Export PDF</Dropdown.Item>
-            <Dropdown.Item>Export HTML</Dropdown.Item>
-            <Dropdown.Item>Settings</Dropdown.Item>
-            <Dropdown.Item>About</Dropdown.Item>
-        </Dropdown>
+function DropdownButton({containerClassName, buttonClassName, title, dropdownClassName, listClassName, listEntries}) {
+    const [open, setOpen] = useState(false)
+
+    function handleOnClick() {
+        setOpen(!open)
+    }
+
+    return (
+        <div className = {containerClassName}>
+            <button type = "button" className = {buttonClassName} onClick={() => handleOnClick()}>
+                {title}           
+            </button>
+            {open &&
+                <div className = {dropdownClassName}>
+                    <ul className = {listClassName}>
+                       {listEntries}
+                    </ul>
+                </div>
+            }
+        </div>
     )
 }
 
