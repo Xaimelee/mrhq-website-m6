@@ -12,7 +12,7 @@ function DisplayProducts() {
         
 
         for (let i = 0; i < searchCollection.length; i++) {
-            productEntries.push(<ProductEntry image = {searchCollection[i].imageurl} brand = {searchCollection[i].brand} name = {searchCollection[i].name} price = {searchCollection[i].price}/>)
+            productEntries.push(<ProductEntry id = {searchCollection[i]._id} image = {searchCollection[i].imageurl} brand = {searchCollection[i].brand} name = {searchCollection[i].name} price = {searchCollection[i].price}/>)
         }
 
         // names = QuickSort(names)

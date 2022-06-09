@@ -1,13 +1,48 @@
 .ProductList {
-
+    @extend .horizontalList;
+    @extend .list;
 }
 
 .ProductEntry {
+    @extend .list;
+    text-align: center;
+}
 
+.ProductEntryBrand {
+    @extend .ProductEntry;
+    @extend .text;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: global.$grey-dark
+}
+
+.ProductEntryName {
+    @extend .ProductEntry;
+    @extend .text;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: global.$grey-dark
+}
+
+.ProductEntryPrice {
+    @extend .ProductEntry;
+    @extend .text;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: global.$grey-dark
 }
 
 .ProductListEntry {
+    @extend .list;
+    width: 550px;
+    box-sizing: border-box;
+}
 
+.ProductShoppingCartButton {
+    background: transparent;
 }
 
 .Product {
@@ -19,5 +54,5 @@
 }
 
 .ProductShoppingCartIcon {
-    
+
 }
