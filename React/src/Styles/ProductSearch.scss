@@ -68,6 +68,19 @@
     max-height: 150px;
 }
 
+.ProductSearchHeader {
+    @extend .horizontalList;
+    @extend .list;
+    width: 100%;
+}
+
+.ProductSearchButton {
+    @extend .redButton;
+    font-size: 18px;
+    min-height: 45px;
+    min-width: 125px;
+}
+
 @media (max-width: 1000px) {
     .ProductSearchBox {
         min-width: 800px;
