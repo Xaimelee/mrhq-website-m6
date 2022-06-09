@@ -1,15 +1,16 @@
 import List from "./List"
+import { useSelector } from 'react-redux'
 
 function HeaderListSearch({headerClassName, listClassName, listEntries}) {
-    let show = true
+    const state = useSelector(state => state.searchState.value)
     
     let searchWindow = <div className = "DropdownButtonContainerMain">
-                {show &&
-                    <div className = "ProductSearchBox">
-                        Test?
-                    </div>
-                }
-            </div>
+                            {state &&
+                                <div className = "ProductSearchBox">
+                                    Test?
+                                </div>
+                            }
+                        </div>
     
     return (
         <div className = {headerClassName}>

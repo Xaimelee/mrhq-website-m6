@@ -1,6 +1,11 @@
+import { useDispatch } from 'react-redux'
+import { setState } from '../Features/searchState'
+
 function NavigationProductListEntry({entryClassName, buttonClassName, imageClassName, image}) {
+    const dispatch = useDispatch()
+    
     function handleOnClick() {
-        //
+        dispatch(setState())
     }
 
     return (
