@@ -1,10 +1,9 @@
-import DisplayCollection from "../Frontend/DisplayCollection"
+import DisplayProducts from "../Frontend/DisplayProducts"
 
 function Products() {
     return (
         <>
-        <div>Hello this is ze productos</div>
-        <DisplayCollection url = "getDryDogFood" />
+        <DisplayProducts url = "getDryDogFood" />
         </>
     )
 }

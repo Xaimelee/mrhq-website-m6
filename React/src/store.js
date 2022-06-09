@@ -5,6 +5,7 @@ import searchInputSubCategoryReducer from "./Features/searchInputSubCategory"
 import searchInputPriceRangeReducer from "./Features/searchInputPriceRange"
 import searchInputLifestageReducer from "./Features/searchInputLifestage"
 import searchStateReducer from "./Features/searchState"
+import searchCollectionReducer from "./Features/searchCollection"
 
 export default configureStore({
   reducer: {
@@ -13,6 +14,7 @@ export default configureStore({
       searchInputCategory: searchInputCategoryReducer,
       searchInputSubCategory: searchInputSubCategoryReducer,
       searchInputPriceRange: searchInputPriceRangeReducer,
-      searchInputLifestage: searchInputLifestageReducer
+      searchInputLifestage: searchInputLifestageReducer,
+      searchCollection: searchCollectionReducer
   }
 })

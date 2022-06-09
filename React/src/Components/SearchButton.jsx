@@ -6,6 +6,8 @@ import { resetInputPriceRange } from '../Features/searchInputPriceRange'
 import { resetInputLifestage } from '../Features/searchInputLifestage'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { setCollection } from '../Features/searchCollection'
+import GetCollection from '../Frontend/GetCollection'
 
 function SearchButton({className, buttonClassName}) {
     const dispatch = useDispatch()
@@ -18,6 +20,7 @@ function SearchButton({className, buttonClassName}) {
 
     function handleOnClick() {
         let canNavigate = true
+        let url = ""
 
         if (categoryInputValue === "Category") {
             canNavigate = false
@@ -31,7 +34,17 @@ function SearchButton({className, buttonClassName}) {
             canNavigate = false
         }
 
+        if (subCategoryInputValue === "Dry Food") {
+            url = "getDryDogFood"
+        }
+
         if (canNavigate) {
+            GetCollection(url)
+            .then(res => res.json())
+            .then(data => {
+              dispatch(setCollection(data))
+            })
+
             navigate("/Products")
             dispatch(setState())
             dispatch(resetInputCategory())
