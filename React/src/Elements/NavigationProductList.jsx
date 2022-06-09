@@ -17,7 +17,7 @@ function NavigationProductList({entryClassName}) {
 
     let listEntries = [
         <>
-        <NavigationProductListEntry entryClassName = {listEntryClassName} buttonClassName = {buttonClassName} imageClassName = {imageEntryClassName} image = {DogMenu}/>
+        <NavigationProductListEntry entryClassName = {listEntryClassName} buttonClassName = {buttonClassName} imageClassName = {imageEntryClassName} image = {DogMenu} categoryIndex = {0}/>
         <ListImageEntry entryClassName = {listEntryClassName} imageClassName = {imageEntryClassName} image = {CatMenu}/>
         <ListImageEntry entryClassName = {listEntryClassName} imageClassName = {imageEntryClassName} image = {FishMenu}/>
         <ListImageEntry entryClassName = {listEntryClassName} imageClassName = {imageEntryClassName} image = {BunnyMenu}/>

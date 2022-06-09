@@ -1,15 +1,10 @@
-.ProductSearchBoxContents {
-    @extend .horizontalList;
-    @extend .list;
-}
-
-.ProductSearchBox {
+.ProductSearchWindow {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 0%;
-    min-width: 900px;
+    min-width: 1000px;
     min-height: 200px;
     z-index: 2;
     background-color: white;
@@ -23,20 +18,76 @@
     display: inline-block;
 }
 
-@media (max-width: 900px) {
+.ProductSearchInputs {
+    @extend .list;
+    justify-content: flex-end;  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ProductSearchInputButton {
+    @extend .buttonDropdown;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 4px;
+    color: global.$grey-dark;
+    background-color: white;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.ProductSearchInputListEntries {
+    //
+}
+
+.ProductSearchInputListButtonEntries {
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+}
+
+.ProductSearchInputDropdown {
+    position: absolute;
+    margin-top: 4px;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.33);
+}
+
+.ProductSearchInputDropdownList {
+    list-style: none;
+    overflow-y: auto;
+    min-height: 33px;
+    max-height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
     .ProductSearchBox {
-        min-width: 700px;
+        min-width: 800px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .ProductSearchBox {
-        min-width: 500px;
+        min-width: 600px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .ProductSearchBox {
-        min-width: 300px;
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .ProductSearchBox {
+        min-width: 250px;
     }
 }
