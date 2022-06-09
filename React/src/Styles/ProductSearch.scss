@@ -36,9 +36,27 @@
     text-align: left;
 }
 
-.ProductSearchInputListEntries {
-    //
+.ProductSearchWindowHeader {
+    @extend .text;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: global.$grey-dark;
+    padding-bottom: 10px;
 }
+
+.ProductSearchWindowContents {
+    @extend .list;
+}
+
+.ProductSearchDropdownButton {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+// .ProductSearchInputListEntries {
+//
+// }
 
 .ProductSearchInputListButtonEntries {
     font-family: 'Poppins', sans-serif;

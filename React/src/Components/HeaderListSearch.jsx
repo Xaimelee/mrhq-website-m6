@@ -15,7 +15,7 @@ function HeaderListSearch({headerClassName, listClassName, listEntries}) {
     const priceRangeInputValue = useSelector(priceRangeInputValue => priceRangeInputValue.searchInputPriceRange.value)
     const lifestageInputValue = useSelector(lifestageInputValue => lifestageInputValue.searchInputLifestage.value)
 
-    const entryClassName = "displayElementHeaderDropdownButton"
+    const entryClassName = "ProductSearchDropdownButton"
     const containerClassName = "DropdownButtonContainerMain"
     const buttonClassName = "ProductSearchInputButton"
     const dropdownClassName = "ProductSearchInputDropdown"
@@ -47,13 +47,16 @@ function HeaderListSearch({headerClassName, listClassName, listEntries}) {
         <div className = "ProductSearchContainer">
             {state &&
                 <div className = "ProductSearchWindow">
-                    <ul className = "ProductSearchInputs">
-                        <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {categoryInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {categoryDropdownEntries}/>
-                        <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {subCategoryInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {subCategoryDropdownEntries}/>
-                        <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {"$" + priceRangeInputValue[0] + " - $" + priceRangeInputValue[1]} dropdownClassName = {dropdownClassName}listClassName = {dropdownListClassName} listEntries = {priceRangeDropdownEntries}/>
-                        <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {lifestageInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {lifestageDropdownEntries}/>          
-                    </ul>
-                    <SearchButton className = "ProductSearchHeader" buttonClassName = "ProductSearchButton"/>
+                    <div className = "ProductSearchWindowContents">
+                        <div className = "ProductSearchWindowHeader">Shop All {searchCategories[category].type}</div>
+                        <ul className = "ProductSearchInputs">
+                            <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {categoryInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {categoryDropdownEntries}/>
+                            <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {subCategoryInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {subCategoryDropdownEntries}/>
+                            <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {"$" + priceRangeInputValue[0] + " - $" + priceRangeInputValue[1]} dropdownClassName = {dropdownClassName}listClassName = {dropdownListClassName} listEntries = {priceRangeDropdownEntries}/>
+                            <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {lifestageInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {lifestageDropdownEntries}/>          
+                        </ul>
+                        <SearchButton className = "ProductSearchHeader" buttonClassName = "ProductSearchButton"/>
+                    </div>
                 </div>
             }
         </div>
