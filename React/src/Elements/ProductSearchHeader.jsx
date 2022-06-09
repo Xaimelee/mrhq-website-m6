@@ -51,7 +51,7 @@ function ProductSearchHeader() {
                     <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {"$" + priceRangeInputValue[0] + " - $" + priceRangeInputValue[1]} dropdownClassName = {dropdownClassName}listClassName = {dropdownListClassName} listEntries = {priceRangeDropdownEntries}/>
                     <ListDropdownButtonEntry entryClassName = {entryClassName} containerClassName = {containerClassName} buttonClassName = {buttonClassName} title = {lifestageInputValue} dropdownClassName = {dropdownClassName} listClassName = {dropdownListClassName} listEntries = {lifestageDropdownEntries}/>          
                 </ul>
-                <SearchButton className = "ProductSearchButtonHeader" buttonClassName = "ProductSearchButton"/>
+                <SearchButton className = "ProductSearchButtonHeader" buttonClassName = "ProductSearchButton" isWindow = {false}/>
             </div>
         </div>
     )

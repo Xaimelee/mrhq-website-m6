@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux'
 import { setCollection } from '../Features/searchCollection'
 import GetCollection from '../Frontend/GetCollection'
 
-function SearchButton({className, buttonClassName}) {
+function SearchButton({className, buttonClassName, isWindow}) {
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
@@ -46,7 +46,9 @@ function SearchButton({className, buttonClassName}) {
             })
 
             navigate("/Products")
-            dispatch(setState())
+            if (isWindow) {
+                dispatch(setState())
+            }
             dispatch(resetInputCategory())
             dispatch(resetInputSubCategory())
             dispatch(resetInputPriceRange())
