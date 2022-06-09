@@ -50,8 +50,16 @@
 }
 
 .ProductSearchDropdownButton {
+    padding-top: 4px;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.ProductSearchHeaderDropdownButton {
+    @extend .ProductSearchDropdownButton;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 24px;
 }
 
 // .ProductSearchInputListEntries {
@@ -86,7 +94,7 @@
     max-height: 150px;
 }
 
-.ProductSearchHeader {
+.ProductSearchButtonHeader {
     @extend .horizontalList;
     @extend .list;
     width: 100%;
@@ -99,26 +107,40 @@
     min-width: 125px;
 }
 
+.ProductSearchHeader {
+    @extend .list;
+
+    flex-direction: column;
+    margin: auto;
+    background-color: global.$grey;
+}
+
+.ProductSearchHeaderText {
+    @extend .ProductSearchWindowHeader;
+    font-size: 46px;
+    padding-top: 10px;
+}
+
 @media (max-width: 1000px) {
-    .ProductSearchBox {
+    .ProductSearchWindow {
         min-width: 800px;
     }
 }
 
 @media (max-width: 800px) {
-    .ProductSearchBox {
+    .ProductSearchWindow {
         min-width: 600px;
     }
 }
 
 @media (max-width: 600px) {
-    .ProductSearchBox {
+    .ProductSearchWindow {
         min-width: 400px;
     }
 }
 
 @media (max-width: 400px) {
-    .ProductSearchBox {
+    .ProductSearchWindow {
         min-width: 250px;
     }
 }
