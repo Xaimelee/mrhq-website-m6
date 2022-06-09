@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from "@reduxjs/toolkit"
 import searchCategoryReducer from "./Features/searchCategory"
 import searchInputCategoryReducer from "./Features/searchInputCategory"
 import searchInputSubCategoryReducer from "./Features/searchInputSubCategory"
@@ -6,6 +6,7 @@ import searchInputPriceRangeReducer from "./Features/searchInputPriceRange"
 import searchInputLifestageReducer from "./Features/searchInputLifestage"
 import searchStateReducer from "./Features/searchState"
 import searchCollectionReducer from "./Features/searchCollection"
+import productsSortReducer from "./Features/productsSort"
 
 export default configureStore({
   reducer: {
@@ -15,6 +16,7 @@ export default configureStore({
       searchInputSubCategory: searchInputSubCategoryReducer,
       searchInputPriceRange: searchInputPriceRangeReducer,
       searchInputLifestage: searchInputLifestageReducer,
-      searchCollection: searchCollectionReducer
+      searchCollection: searchCollectionReducer,
+      productsSort: productsSortReducer
   }
 })

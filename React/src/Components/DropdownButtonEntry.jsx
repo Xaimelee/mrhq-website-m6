@@ -1,8 +1,9 @@
-import { useDispatch } from 'react-redux'
-import { setInputCategory } from '../Features/searchInputCategory'
-import { setInputSubCategory } from '../Features/searchInputSubCategory'
-import { setInputPriceRange } from '../Features/searchInputPriceRange'
-import { setInputLifestage } from '../Features/searchInputLifestage'
+import { useDispatch } from "react-redux"
+import { setInputCategory } from "../Features/searchInputCategory"
+import { setInputSubCategory } from "../Features/searchInputSubCategory"
+import { setInputPriceRange } from "../Features/searchInputPriceRange"
+import { setInputLifestage } from "../Features/searchInputLifestage"
+import { setSort } from "../Features/productsSort"
 
 function DropdownButtonEntry({entryClassName, buttonClassName, value, index}) {
     const dispatch = useDispatch()
@@ -17,6 +18,8 @@ function DropdownButtonEntry({entryClassName, buttonClassName, value, index}) {
             dispatch(setInputPriceRange(buttonValue))
         } else if (index === 3) {
             dispatch(setInputLifestage(buttonValue))
+        } else if (index === 4) {
+            dispatch(setSort(buttonValue))
         }
     }
 

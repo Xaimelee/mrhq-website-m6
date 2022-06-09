@@ -45,6 +45,15 @@
     background: transparent;
 }
 
+.ProductSortButton {
+    @extend .list;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+
+    list-style: none;
+}
+
 // .Product {
 
 // }

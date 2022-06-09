@@ -1,4 +1,4 @@
-import { Fade } from 'react-slideshow-image';
+import { Fade } from "react-slideshow-image";
 import Banner1 from "../Images/2-top-rolling-banner/banner-1.png"
 import Banner2 from "../Images/2-top-rolling-banner/banner-2.png"
 import Banner3 from "../Images/2-top-rolling-banner/banner-3.png"

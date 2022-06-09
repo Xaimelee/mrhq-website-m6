@@ -2,7 +2,7 @@ import List from "./List"
 import DropdownButtonEntry from "./DropdownButtonEntry"
 import ListDropdownButtonEntry from "./ListDropdownButtonEntry"
 import SearchButton from "./SearchButton"
-import { useSelector } from 'react-redux'
+import { useSelector } from "react-redux"
 import { searchCategories } from "../Frontend/SearchInputs"
 import { searchRanges } from "../Frontend/SearchInputs"
 import { searchLifestages } from "../Frontend/SearchInputs"

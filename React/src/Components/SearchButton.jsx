@@ -1,13 +1,13 @@
-import { useDispatch } from 'react-redux'
-import { setState } from '../Features/searchState'
-import { resetInputCategory} from '../Features/searchInputCategory'
-import { resetInputSubCategory } from '../Features/searchInputSubCategory'
-import { resetInputPriceRange } from '../Features/searchInputPriceRange'
-import { resetInputLifestage } from '../Features/searchInputLifestage'
-import { useNavigate } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import { setCollection } from '../Features/searchCollection'
-import GetCollection from '../Frontend/GetCollection'
+import { useDispatch } from "react-redux"
+import { setState } from "../Features/searchState"
+import { resetInputCategory} from "../Features/searchInputCategory"
+import { resetInputSubCategory } from "../Features/searchInputSubCategory"
+import { resetInputPriceRange } from "../Features/searchInputPriceRange"
+import { resetInputLifestage } from "../Features/searchInputLifestage"
+import { useNavigate } from "react-router-dom"
+import { useSelector } from "react-redux"
+import { setCollection } from "../Features/searchCollection"
+import GetCollection from "../Frontend/GetCollection"
 
 function SearchButton({className, buttonClassName, isWindow}) {
     const dispatch = useDispatch()
