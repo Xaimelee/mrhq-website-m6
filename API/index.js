@@ -1,10 +1,10 @@
 const express = require("express")
 const mongoose = require('mongoose')
-const DogFood = require('./models/dog_food.js')
+const DryDogFood = require('./models/dry_dog_food.js')
 
 const server = express()
 const port = process.env.PORT || 8999
-const url = "mongodb://admin:admin@mongo:27017/products?authSource=admin"
+const url = "mongodb://admin:admin@mongo:27017/dog_food?authSource=admin"
 
 server.use(express.json())
 
@@ -21,8 +21,8 @@ server.use(function(req, res, next) {
     next();
 });
 
-server.get("/getDogFood", (req, res) => {
-    DogFood.find()
+server.get("/getDryDogFood", (req, res) => {
+    DryDogFood.find()
         .then((result) => {
             res.send(result)
             return result
