@@ -11,16 +11,19 @@
 
 .InformationBannerEntryText {
     @extend .text;
+    font-weight: 500;
     font-size: 20px;
 }
 
 .InformationBannerEntryTextSecondary {
     @extend .text;
+    font-weight: 600;
     font-size: 24px;
 }
 
 .InformationBannerEntryTextHeader {
     @extend .text;
+    font-weight: 700;
     font-size: 28px;
 }
 
