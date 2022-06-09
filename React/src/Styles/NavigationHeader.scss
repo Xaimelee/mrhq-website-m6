@@ -23,6 +23,10 @@
     @extend .listEntry;
 }
 
+.NavigationHeaderProductListButton {
+    background-color: transparent;
+}
+
 .NavigationHeaderAccountList {
     @extend .horizontalList;
     @extend .list;
