@@ -30,10 +30,13 @@
 .DropdownButtonMain {
     @extend .buttonDropdown;
 
+    text-align: left;
     color: global.$grey-dark;
     background-color: white;
 }
 
 .DropdownButtonIcon {
-    padding-left: 24px;
+    padding-top: 5px;
+    padding-right: 5px;
+    float: right;
 }
